@@ -104,6 +104,7 @@
     .screens { display: flex; gap: 10px; overflow-x: auto; margin: 18px 0 12px; padding-bottom: 8px; scrollbar-width: thin; }
     .screens:empty { display: none; }
     .screens img { height: 180px; width: auto; flex: none; border: 1px solid var(--line); border-radius: 10px; background: #090d1c; }
+    @media (min-width: 901px) { .app-grid .cardbody > p { min-height: 4.8em; } }
     .tool-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
     .tool-group { min-width: 0; }
     .tool-group h3 { margin: 0 0 12px; padding-bottom: 12px; border-bottom: 1px solid #ffffff36; font-size: 19px; line-height: 1.4; }
