@@ -90,10 +90,6 @@
     .creative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .media-wrap { position: relative; overflow: hidden; }
     .media { display: block; aspect-ratio: 16/8; width: 100%; object-fit: cover; background: #181c30; }
-    .video-art { display: grid; align-content: center; justify-items: center; gap: 8px; background: radial-gradient(ellipse at 30% 10%, #514382, #171d31 75%); }
-    .video-art.alt { background: radial-gradient(ellipse at 70% 20%, #18556e, #171d31 75%); }
-    .video-art > span { font-size: 42px; color: #d7d2ff; line-height: 1; }
-    .video-art > b { font-size: 16px; color: #dce5fa; font-weight: 600; }
     .play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 52px; height: 52px; display: grid; place-items: center; padding-left: 3px; border-radius: 50%; border: 1px solid #ffffff88; background: #0c132bcc; font-size: 21px; }
     .platform { color: var(--pink); font-size: 14px; font-weight: 700; line-height: 1.5; }
     .apphead { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
@@ -228,11 +224,11 @@
           <div class="cardbody"><span class="platform">Музыка · YouTube</span><h3 lang="pl">W ciszy nocnej wołam cię</h3><p>Музыкальный эксперимент на польском языке для сравнения и обсуждения.</p><span class="small-link">Слушать на YouTube</span></div>
         </a>
         <a class="card" href="https://www.tiktok.com/@cloud9k7/video/7631887625502199072" target="_blank" rel="noopener noreferrer">
-          <div class="media video-art" aria-hidden="true"><span>▶</span><b>#минск · #криминал</b></div>
+          <div class="media-wrap"><img class="media" src="assets/video-previews/minsk.jpg" alt="Кадр видео «Минск»" loading="lazy"><span class="play" aria-hidden="true">▶</span></div>
           <div class="cardbody"><span class="platform">Короткое видео · TikTok</span><h3>Минск</h3><p>Ролик из моего TikTok — один из примеров для разбора на митапе.</p><span class="small-link">Смотреть в TikTok</span></div>
         </a>
         <a class="card" href="https://www.tiktok.com/@cloud9k7/video/7631155504143813921" target="_blank" rel="noopener noreferrer">
-          <div class="media video-art alt" aria-hidden="true"><span>▶</span><b>@cloud9k7</b></div>
+          <div class="media-wrap"><img class="media" src="assets/video-previews/self-promo.jpg" alt="Кадр видео «Самореклама»" loading="lazy"><span class="play" aria-hidden="true">▶</span></div>
           <div class="cardbody"><span class="platform">Короткое видео · TikTok</span><h3>Самореклама</h3><p>Ещё один ролик из моего TikTok: посмотрим и обсудим на выступлении.</p><span class="small-link">Смотреть в TikTok</span></div>
         </a>
       </div>
