@@ -174,7 +174,7 @@
     }
     body { background: var(--bg); }
     .site-nav { background: #fffffff0; box-shadow: 0 6px 24px #14365f0b; }
-    .brand span { color: #cc4156; }
+    .brand img { display: block; width: 150px; height: 30px; object-fit: contain; }
     .navlinks { color: #315274; }
     .navlinks a:hover, .navlinks a[aria-current="location"] { background: #eaf0fb; color: var(--cyan); }
     .portfolio-link { color: var(--cyan); }
@@ -224,7 +224,7 @@
   <a class="skip-link" href="#top">Перейти к содержанию</a>
   <nav class="site-nav" aria-label="Разделы страницы">
     <div class="navinner">
-      <a class="brand" href="#top">IHAR<span> / AI LAB</span></a>
+      <a class="brand" href="#top" aria-label="Instinctools"><img src="assets/instinctools-logo.png" alt="Instinctools"></a>
       <div class="navlinks">
         <a href="#agenda">Программа</a>
         <a href="#creative">Примеры</a>
