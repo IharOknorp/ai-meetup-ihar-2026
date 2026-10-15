@@ -113,6 +113,12 @@
     .note { padding: 32px; border: 1px solid #a7adff40; border-radius: 18px; background: linear-gradient(120deg, #30336b66, #172b3c55); }
     .note h2 { max-width: 850px; font-size: clamp(25px, 3vw, 32px); line-height: 1.4; margin-bottom: 16px; }
     .note p:last-child { color: var(--muted); font-size: 16px; margin: 0; }
+    .ai-quote { position: relative; overflow: hidden; padding: 38px 40px 34px; border: 1px solid #c9d8ee; border-radius: 18px; background: linear-gradient(120deg, #eef3ff, #fcf7ff 65%, #fff); }
+    .ai-quote::before { content: "“"; position: absolute; top: -26px; right: 26px; color: #3158a914; font: 800 180px/1 Georgia, serif; }
+    .ai-quote blockquote { position: relative; max-width: 920px; margin: 14px 0 24px; color: #14365f; font-size: clamp(23px, 3vw, 34px); font-weight: 700; line-height: 1.42; letter-spacing: -.015em; }
+    .quote-source { position: relative; margin: 0; color: var(--muted); font-size: 15px; }
+    .quote-source a { color: var(--cyan); font-weight: 800; text-decoration: underline; text-decoration-color: #3158a955; text-underline-offset: 4px; }
+    .quote-source a:hover { text-decoration-color: currentColor; }
     .footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
     .footer p { margin: 0; }
     .footer strong { color: var(--text); font-size: 16px; }
@@ -153,6 +159,8 @@
       .cardbody { padding: 20px; }
       .card h3 { font-size: 21px; }
       .note { padding: 24px; }
+      .ai-quote { padding: 28px 24px 26px; }
+      .ai-quote::before { right: 8px; font-size: 130px; }
       .footer { display: block; }
       .footer p + p { margin-top: 20px; }
     }
@@ -370,6 +378,14 @@
             <li><a class="tool-link" href="https://iharoknorp.github.io/" target="_blank" rel="noopener noreferrer"><span><strong>OknorpCorp</strong><small>Моё портфолио приложений</small></span></a></li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="context-title">
+      <div class="ai-quote">
+        <p class="overline" id="context-title">Контекст важнее формулировки</p>
+        <blockquote>«Работа с языковыми моделями всё меньше сводится к поиску правильных слов и фраз для промптов — и всё больше к вопросу: какая конфигурация контекста вероятнее всего приведёт модель к желаемому поведению?»</blockquote>
+        <p class="quote-source"><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" target="_blank" rel="noopener noreferrer">Команда Applied AI, Anthropic</a> · «Effective context engineering for AI agents»</p>
       </div>
     </section>
 
